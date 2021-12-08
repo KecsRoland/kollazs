@@ -1,0 +1,11 @@
+    a{
+      text-decoration: none;
+      background-color: rgb(56, 238, 0);
+      color: rgb(rgb(55, 0, 255));
+    }
+    button{
+      border-radius: 15px;
+    }
+    body{
+        text-align: center;
+    }
