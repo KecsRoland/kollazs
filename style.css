@@ -1,5 +1,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    
     body{
       margin: 0;
       font-family: "Lato", sans-serif;
@@ -20,6 +22,7 @@
       position: fixed;
       height: 100%;
       overflow: auto;
+      font-family: 'Cairo', sans-serif;
     }
     
     .sidebar a {
