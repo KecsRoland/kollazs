@@ -16,7 +16,7 @@
       margin: 0;
       padding: 0;
       width: 200px;
-      background-color: rgb(56, 238, 0);
+      background-color: #4a50f0;
       position: fixed;
       height: 100%;
       overflow: auto;
@@ -32,7 +32,7 @@
     .sidebar a.active {
       font-family: 'Dancing Script', cursive;
       font-size: 21px;
-      background-color: #fbff00;
+      background-color: #bf58ff;
       color: white;
     }
     
