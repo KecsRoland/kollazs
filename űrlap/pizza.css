@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(247, 48, 48);
+}
+h1{
+    text-align: center;
+    color: aquamarine;
+    bottom: 20px;
+}
+.vissza{
+    font-size: larger;
+}
+a:link {
+    color: blue;
+  }
+  a:visited {
+    color: blue;
+  }
+  a:hover {
+    color: rgb(255, 251, 0);
+  }
+  a:active {
+    color: rgb(255, 251, 0);
+  }
