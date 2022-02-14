@@ -37,23 +37,6 @@ img{
     height: 250px; 
     border: 3px solid black;
 }
-button{
-    background-color:rgb(5, 226, 255);
-    border-width: 0px;
-    color: #fbff00;
-}
-a:link{
-    color: #fbff00;
-}
-a:visited{
-    color: #4a50f0;
-}
-a:hover{
-    color: #fbff00;
-}
-a:active{
-    color: #fbff00;
-}
 p{
     font-family: 'Indie Flower', cursive;
 }

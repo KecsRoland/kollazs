@@ -1,20 +1,23 @@
+body{
+  background-color: rgb(5, 226, 255);
+}
 h1{
     text-align: center;
     color: aquamarine;
   }
 .szoveg{
-  color: rgb(0, 119, 255);
  font-size: large; 
 }
 li{
   margin-bottom: 10px;
+  font-weight: bold;
 }
 fieldset{
   max-width: 500px;
   max-height: 200px;
-  border: rgb(0, 119, 255) solid 1px;
+  border: 1px solid rgb(183, 0, 255);
   margin-bottom: 20px;
 }
 legend{
-  color: rgb(0, 119, 255);
+  color:rgb(183, 0, 255);
 }
