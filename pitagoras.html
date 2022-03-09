@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagoras</title>
+
+<script>
+    function szamit (){
+        eredmeny.value = Math.sqrt(a.value * a.value + b.value * b.value)
+    }
+</script>
+
+</head>
+<body>
+    <h1>Pitgaorasz szímítás</h1>
+    <img style="width: 300px;" src="https://th.bing.com/th/id/OIP.9xk-XGKBCgf8BdYwNV3SNAHaEP?pid=ImgDet&rs=1" alt="">
+    <br>
+    <fieldset style="width: 200px;">
+        <legend>Itt számolódik ki a feladat</legend>
+            <input type="number" name="aoldal" id="a"><br>
+            <input type="number" name="boldal" id="b"><br>
+            <input type="text" id="eredmeny"><br>
+            <button onclick="szamit()">Kiszámol</button>
+    </fieldset>
+</body>
+</html>
