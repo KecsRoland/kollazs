@@ -1,0 +1,25 @@
+.aru{
+    height: 10.5vw;
+    background-color: white;
+}
+body{
+    background-color: rgb(5, 226, 255);
+    text-align: center;
+}
+table{
+    background-color: wheat;
+    margin: auto;
+    color: blue;
+}
+td,tr,th{
+    border: 2.5px white solid; 
+    padding: 0px;
+}
+.leiras{
+    height: 5vw;
+    transition: 2s;
+    
+}
+.leiras:hover{
+transform: scale(6.5);
+}
