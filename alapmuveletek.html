@@ -43,15 +43,16 @@
 
     <div class="content">
     
-            <p>Add meg itt a számokat amikkel szertnél számolni:
-                <input type="number" name="szam" id="x">
-                <input type="number" name="szam" id="y">
-            </p>
-    
-            <p>A  <button onclick="osszead(x.value, y.value)">Összeadás</button>  eredménye itt fog megjelenni: <span id="osszedas"></span></p>
-            <p>A  <button onclick="kivon(x.value, y.value)">Kivonás</button>  eredménye itt fog megjelenni:<span id="kivonas"></span></p>
-            <p>A  <button onclick="szoroz(x.value, y.value)">Szorzás</button>  eredménye itt fog megjelenni: <span id="szorozas"></span></p>
-            <p>A  <button onclick="oszt(x.value, y.value)">Osztás</button>  eredménye itt fog megjelenni: <span id="osztas"></span></p>
+            <div class="large">
+                <p>Add meg itt a számokat amikkel szertnél számolni:
+                    <input type="number" name="szam" id="x">
+                    <input type="number" name="szam" id="y">
+                </p>
+                <p>A  <button onclick="osszead(x.value, y.value)">Összeadás</button>  eredménye itt fog megjelenni: <span id="osszedas"></span></p>
+                <p>A  <button onclick="kivon(x.value, y.value)">Kivonás</button>  eredménye itt fog megjelenni:<span id="kivonas"></span></p>
+                <p>A  <button onclick="szoroz(x.value, y.value)">Szorzás</button>  eredménye itt fog megjelenni: <span id="szorozas"></span></p>
+                <p>A  <button onclick="oszt(x.value, y.value)">Osztás</button>  eredménye itt fog megjelenni: <span id="osztas"></span></p>
+            </div>
     
         <script>
             function osszead(x,y){

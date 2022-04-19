@@ -1,7 +1,6 @@
 body{
     background-color: rgb(5, 226, 255);
     text-align: center;
-    font-size: larger;
     font-family: 'Oswald', sans-serif;
 }
 button{
@@ -19,4 +18,7 @@ span{
     background-size: 20px;
     background-color: whitesmoke;
     border-radius: 4px;
+}
+.large{
+    font-size: larger;
 }
