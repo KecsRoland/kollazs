@@ -24,19 +24,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pitagoras.css
-    ">
-    <title>Pitagoras</title>
-
-<script>
-    function atfogoszamit (){
-        atfogoeredmeny.value = Math.sqrt(a.value * a.value + b.value * b.value)
-    }
-    function befogoszamit(){
-        befogoeredmeny.value = Math.sqrt(c.value * c.value - m.value * m.value) 
-    }
-</script>
-
+    <link rel="stylesheet" href="css/alapm.css">
+    <title>Számolpógép</title>
+    
 </head>
 <body>
     <div class="sidebar">
@@ -47,28 +37,42 @@
         <a href="https://kecsroland.github.io/kollazs/evszakok.html">4. feladat Évszakok</a>
         <a href="https://kecsroland.github.io/kollazs/ürlap.html">5. feladat Űrlap</a>
         <a href="https://kecsroland.github.io/kollazs/tablazat.html">6. feladat Táblázat</a>
-        <a href="https://kecsroland.github.io/kollazs/alapmuveletek.html">7. feladat Alapműveletek</a>
-        <a class="active" style="color: #fbff00;"  href="https://kecsroland.github.io/kollazs/alapmuveletek.html">8. feladat Pitagorasz tétel</a>
+        <a class="active" style="color: #fbff00;"  href="https://kecsroland.github.io/kollazs/alapmuveletek.html">7. feladat Alapműveletek</a>
+        <a href="https://kecsroland.github.io/kollazs/pitagoras.html">8. feladat Pitagorasz tétel</a>
     </div>
 
     <div class="content">
-        <h1>Egyszerű Számítás a pitgaorasz tétel segítségével</h1>
-        <img src="https://www.nkp.hu/tankonyv/matematika_9//img/Szaki09_matek/FI_511010902_szakiskola_9_NKP-116b.png?max_width=2048" alt="Derékszögű háromszög">
-        <br>
-        <fieldset>
-            <legend>Átfogó kiszámítása</legend>
-                <p>a oldal értéke:<input type="number" name="aoldal" id="a"></p>
-                <p>b oldal értéke:<input type="number" name="boldal" id="b"></p>
-                <p>Végeredmény:<input type="text" id="atfogoeredmeny"></p>
-                <button onclick="atfogoszamit()">Kiszámol</button>
-        </fieldset>
-        <fieldset>
-            <legend>Befogó kiszámítása</legend>
-            <p>Átfogó értéke:<input type="number" name="coldal" id="c"></p>
-            <p>Megadott befogó<input type="number" name="megadott befogo" id="m"></p>
-            <p>Végeredmény:<input type="text" name="befogoeredmeny" id="befogoeredmeny"></p>
-            <button onclick="befogoszamit()">Kiszámol</button>
-        </fieldset>
-    </div>
+    
+            <p>Add meg itt a számokat amikkel szertnél számolni:
+                <input type="number" name="szam" id="x">
+                <input type="number" name="szam" id="y">
+            </p>
+    
+            <p>A  <button onclick="osszead(x.value, y.value)">Összeadás</button>  eredménye itt fog megjelenni: <span id="osszedas"></span></p>
+            <p>A  <button onclick="kivon(x.value, y.value)">Kivonás</button>  eredménye itt fog megjelenni:<span id="kivonas"></span></p>
+            <p>A  <button onclick="szoroz(x.value, y.value)">Szorzás</button>  eredménye itt fog megjelenni: <span id="szorozas"></span></p>
+            <p>A  <button onclick="oszt(x.value, y.value)">Osztás</button>  eredménye itt fog megjelenni: <span id="osztas"></span></p>
+    
+        <script>
+            function osszead(x,y){
+                document.getElementById("osszedas").innerHTML = Number(x) + Number(y)
+            }
+            function szoroz(x,y){
+                document.getElementById("szorozas").innerHTML = Number(x) * Number(y)
+            }
+            function kivon(x,y){
+                document.getElementById("kivonas").innerHTML = Number(x) - Number(y)
+            }
+            function oszt(x,y){
+                document.getElementById("osztas").innerHTML = Number(x) / Number(y)
+            }
+        </script>
+</div>
+<footer>
+    <p>
+        E-mail: kecskesr@kkszki.hu
+        Copyright&Kecskés Roland
+    </p>
+</footer>
 </body>
 </html>
