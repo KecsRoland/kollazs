@@ -42,35 +42,33 @@
         <a href="https://kecsroland.github.io/kollazs/alapmuveletek.html">7. feladat Alapműveletek</a>
         <a href="https://kecsroland.github.io/kollazs/alapmuveletek.html">8. feladat Pitagorasz tétel</a>
         <a class="active" style="color: #fbff00;"  href="https://kecsroland.github.io/kollazs/regisztracio.html">9. feladat Regisztráció</a>
-        <a href="https://kecsroland.github.io/kollazs/bejelentkezes.html">10. feladat Bejelentkezeés</a>
+        
     </div>
 
     <div class="content">
 
-            <fieldset>
-                <legend>Regisztrcációs Panel</legend>
-                <p>Kérlek itt add meg az adataidat, hogy tudjunk téged regisztrálni</p>
-                <input type="text" name="felhasznalonev" id="felh" placeholder="Felhasználónév">
-                <input type="text" name="jelszo" id="jel" placeholder="Jelszó">
-                <button onclick="regisztralas()">Regisztrálás</button>
-            </fieldset>
-            <br>
-            <button onclick="adkiiras()">Meg tudod nézni milyen adatokkal regisztráltál</button>
-            <p id="felh">A Felhasználóneved:</p>
-            <p id="jel">A jelszvad:</p>
-            
-
+        <fieldset style="width: 50%;">
+            <legend>Regisztráció</legend>
+                <label for="">Add meg az adataidat</label>
+                <input type="text" name="felhaszn" id="username" placeholder="Felhasználónév">
+                <input type="text" name="jelsz"  id="password" placeholder="Jelszó">
+                <button id="button" onclick="Bejelenetkezes()">Bejelenetkezes</button>
+        </fieldset>
+    
+        <p id="user">A felhasználóneved: </p>
+        <p id="pass">A jelszavad: </p>
+    
+        <button onclick="adatok()">Kattintas</button>
+    
         <script>
-            function regisztralas(){
-                localStorage.setItem('Felhasználónév', felh.value);
-                localStorage.setItem('Jelszó', jel.value);
+            function adatok(){
+                document.getElementById("user").innerHTML = localStorage.getItem("Felhasználónév");
+                document.getElementById("pass").innerHTML = localStorage.getItem("Jelszó");
             }
-            function adkiiras(){
-                document.getElementById("felh").innerHTML = localStorage.getItem("Felhasználónév");
-                document.getElementById("jel").innerHTML = localStorage.getItem("Jelszó");
+            function Bejelenetkezes(){
+                localStorage.setItem('Felhasználónév', username.value);
+                localStorage.setItem('Jelszó', password.value);
             }
-
-
         </script>
     </div>
 
