@@ -46,29 +46,33 @@
     </div>
 
     <div class="content">
-
-        <fieldset style="width: 50%;">
-            <legend>Regisztráció</legend>
-                <label for="">Add meg az adataidat</label>
+        <fieldset>
+            <legend>Regisztrációs panel</legend>
+                <p>Kérlek add meg itt az adataidat amivel szeretnél regisztrálni</p>
                 <input type="text" name="felhaszn" id="username" placeholder="Felhasználónév">
                 <input type="text" name="jelsz"  id="password" placeholder="Jelszó">
-                <button id="button" onclick="Bejelenetkezes()">Bejelenetkezes</button>
+                <br>
+                <br>
+                <button id="button" onclick="regisztralas()">Regisztrálás</button>
         </fieldset>
     
         <p id="user">A felhasználóneved: </p>
         <p id="pass">A jelszavad: </p>
     
-        <button onclick="adatok()">Kattintas</button>
+        <button onclick="adkiiras()">Adatok megtekintése</button>
     
         <script>
-            function adatok(){
+            function adkiiras(){
                 document.getElementById("user").innerHTML = localStorage.getItem("Felhasználónév");
                 document.getElementById("pass").innerHTML = localStorage.getItem("Jelszó");
             }
-            function Bejelenetkezes(){
+            function regisztralas(){
                 localStorage.setItem('Felhasználónév', username.value);
                 localStorage.setItem('Jelszó', password.value);
             }
+        </script>
+
+
         </script>
     </div>
 
