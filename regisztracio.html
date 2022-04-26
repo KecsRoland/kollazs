@@ -23,18 +23,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Regisztráció</title>
+    
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/pitagoras.css">
-    <title>Pitagoras</title>
-
-<script>
-    function atfogoszamit (){
-        atfogoeredmeny.value = Math.sqrt(a.value * a.value + b.value * b.value)
-    }
-    function befogoszamit(){
-        befogoeredmeny.value = Math.sqrt(c.value * c.value - m.value * m.value) 
-    }
-</script>
+    <link rel="stylesheet" href="css/regisztracio.css">
 
 </head>
 <body>
@@ -47,29 +40,45 @@
         <a href="https://kecsroland.github.io/kollazs/ürlap.html">5. feladat Űrlap</a>
         <a href="https://kecsroland.github.io/kollazs/tablazat.html">6. feladat Táblázat</a>
         <a href="https://kecsroland.github.io/kollazs/alapmuveletek.html">7. feladat Alapműveletek</a>
-        <a class="active" style="color: #fbff00;"  href="https://kecsroland.github.io/kollazs/alapmuveletek.html">8. feladat Pitagorasz tétel</a>
-        <a href="https://kecsroland.github.io/kollazs/regisztracio.html">9. feladat Regisztráció</a>
+        <a href="https://kecsroland.github.io/kollazs/alapmuveletek.html">8. feladat Pitagorasz tétel</a>
+        <a class="active" style="color: #fbff00;"  href="https://kecsroland.github.io/kollazs/regisztracio.html">9. feladat Regisztráció</a>
         <a href="https://kecsroland.github.io/kollazs/bejelentkezes.html">10. feladat Bejelentkezeés</a>
     </div>
 
     <div class="content">
-        <h1>Egyszerű Számítás a pitgaorasz tétel segítségével</h1>
-        <img src="https://www.nkp.hu/tankonyv/matematika_9//img/Szaki09_matek/FI_511010902_szakiskola_9_NKP-116b.png?max_width=2048" alt="Derékszögű háromszög">
-        <br>
-        <fieldset>
-            <legend>Átfogó kiszámítása</legend>
-                <p>a oldal értéke:<input type="number" name="aoldal" id="a"></p>
-                <p>b oldal értéke:<input type="number" name="boldal" id="b"></p>
-                <p>Végeredmény:<input type="text" id="atfogoeredmeny"></p>
-                <button onclick="atfogoszamit()">Kiszámol</button>
-        </fieldset>
-        <fieldset>
-            <legend>Befogó kiszámítása</legend>
-            <p>Átfogó értéke:<input type="number" name="coldal" id="c"></p>
-            <p>Megadott befogó<input type="number" name="megadott befogo" id="m"></p>
-            <p>Végeredmény:<input type="text" name="befogoeredmeny" id="befogoeredmeny"></p>
-            <button onclick="befogoszamit()">Kiszámol</button>
-        </fieldset>
+
+            <fieldset>
+                <legend>Regisztrcációs Panel</legend>
+                <p>Kérlek itt add meg az adataidat, hogy tudjunk téged regisztrálni</p>
+                <input type="text" name="felhasznalonev" id="felh" placeholder="Felhasználónév">
+                <input type="text" name="jelszo" id="jel" placeholder="Jelszó">
+                <button onclick="regisztralas()">Regisztrálás</button>
+            </fieldset>
+            <br>
+            <button onclick="adkiiras()">Meg tudod nézni milyen adatokkal regisztráltál</button>
+            <p id="felh">A Felhasználóneved:</p>
+            <p id="jel">A jelszvad:</p>
+            
+
+        <script>
+            function regisztralas(){
+                localStorage.setItem('Felhasználónév', felh.value);
+                localStorage.setItem('Jelszó', jel.value);
+            }
+            function adkiiras(){
+                document.getElementById("felh").innerHTML = localStorage.getItem("Felhasználónév");
+                document.getElementById("jel").innerHTML = localStorage.getItem("Jelszó");
+            }
+
+
+        </script>
     </div>
+
+    <footer>
+        <p>
+          E-mail: kecskesr@kkszki.hu
+          Copyright&Kecskés Roland
+        </p>
+      </footer>
 </body>
 </html>
