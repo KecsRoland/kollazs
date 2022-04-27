@@ -32,6 +32,7 @@
       height: 100%;
       overflow: auto;
       font-family: 'Cairo', sans-serif;
+      text-align: center;
     }
     
     .sidebar a {
