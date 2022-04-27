@@ -50,7 +50,14 @@
             <legend>Regisztrációs panel</legend>
                 <p>Kérlek add meg itt az adataidat amivel szeretnél regisztrálni</p>
                 <input type="text" name="felhaszn" id="username" placeholder="Felhasználónév">
-                <input type="text" name="jelsz"  id="password" placeholder="Jelszó">
+                <br>
+                <input type="password" name="jelsz"  id="password" placeholder="Jelszó">
+                <br>
+                <input type="password" name="jelszmeg"  placeholder="Jelszó megerősítése">
+                <br>
+                <input type="email" name="email" placeholder="E-mail címed">
+                <br>
+                <label>Kérlek fogadd el az ÁSZF-et---></label><input type="checkbox" name="aszf" id="">
                 <br>
                 <br>
                 <button id="button" onclick="regisztralas()">Regisztrálás</button>
